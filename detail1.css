@@ -1,0 +1,180 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #414651;
+    background-color: #fff;
+    cursor: none; /* Hilangkan kursor default */
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (hover: none) { 
+    body, a, button { cursor: auto !important; } 
+    #custom-cursor { display: none !important; }
+}
+
+img { display: block; max-width: 100%; height: auto; object-fit: cover; }
+.rounded-img { border-radius: 12px; }
+
+/* --- LAYOUT UTILITIES --- */
+.container {
+    width: 100%; max-width: 1294px; margin: 0 auto;
+    padding: 0 24px; padding-top: 140px; padding-bottom: 40px;
+}
+
+.section-block { margin-bottom: 80px; }
+.mb-large { margin-bottom: 40px; }
+.mt-2 { margin-top: 16px; }
+
+/* Grid Systems */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+.flex-grow { flex-grow: 1; }
+.full-width-header { width: 100%; }
+
+/* --- TYPOGRAPHY --- */
+.main-heading { font-size: 48px; font-weight: 800; color: #181D27; letter-spacing: -0.02em; line-height: 1.1; }
+.section-heading { font-size: 32px; font-weight: 700; color: #181D27; margin-bottom: 16px; text-transform: uppercase; letter-spacing: -0.01em;}
+.card-heading { font-size: 20px; font-weight: 600; color: #111827; margin-bottom: 8px; }
+
+.subtitle { font-size: 20px; color: #414651; line-height: 1.6; }
+.text-body { font-size: 18px; line-height: 1.6; color: #414651; }
+.text-muted { font-size: 16px; line-height: 1.5; color: #687280; }
+.text-small { font-size: 16px; line-height: 1.5; color: #414651; }
+.text-large { font-size: 28px; color: #687280; margin-bottom: 12px; }
+
+/* --- COMPONENTS --- */
+.meta-wrapper {
+    display: flex; justify-content: space-between;
+    border-top: 1px solid #E9EAEB; border-bottom: 1px solid #E9EAEB;
+    padding: 24px 0; margin-top: 48px; margin-bottom: 0; gap: 24px;
+}
+.meta-item { display: flex; flex-direction: column; gap: 6px; }
+.meta-label { font-size: 12px; font-weight: 600; color: #9CA3AF; letter-spacing: 0.05em; text-transform: uppercase; }
+.meta-value { font-size: 16px; font-weight: 500; color: #111827; }
+
+.hero-section { display: flex; flex-direction: column; gap: 32px; }
+.hero-img { margin-bottom: 0px; width: 100%; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+.hero-text { display: flex; flex-direction: column; gap: 20px; }
+.tags-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag { font-size: 13px; font-weight: 500; padding: 6px 12px; border: 1px solid #E5E7EB; border-radius: 6px; color: #4B5563; background: #FAFAFA; }
+
+/* SPLIT LAYOUT */
+.split-layout { display: flex; gap: 40px; align-items: flex-start; }
+.side-img { width: 40%; border-radius: 12px; } 
+
+.simple-card { display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #FAFAFA; border: 1px solid #E9EAEB; border-radius: 12px; }
+.gray-card { background: #F5F5F5; padding: 24px; border-radius: 12px; display: flex; flex-direction: column; gap: 12px; }
+.icon-wrap { width: 40px; height: 40px; margin-bottom: 16px; color: #181D27; }
+
+.section-intro { margin-bottom: 32px; max-width: 800px; }
+.market-grid { display: flex; gap: 4px; width: 100%; overflow-x: auto; }
+.market-col { flex: 1; display: flex; flex-direction: column; min-width: 200px; }
+.table-header { height: 56px; background: #F5F5F5; font-weight: 600; display: flex; align-items: center; justify-content: center; border-radius: 8px 8px 0 0; }
+.table-item { height: 64px; border-bottom: 1px solid #D5D7DA; display: flex; align-items: center; justify-content: center; font-weight: 500; color: #374151; }
+
+.concept-group { margin-bottom: 48px; }
+.concept-intro { margin-bottom: 24px; max-width: 800px; }
+.showcase-item, .next-item { display: flex; flex-direction: column; }
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 900px) {
+    .container { padding-top: 110px; padding-left: 20px; padding-right: 20px; }
+    .main-heading { font-size: 32px; }
+    .section-heading { font-size: 24px; }
+    .subtitle { font-size: 18px; }
+    .text-body, .text-small, .text-muted { font-size: 16px; }
+
+    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; gap: 20px; }
+    .meta-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    /* Market Grid stacking */
+    .market-grid { flex-direction: column; gap: 12px; }
+    .market-col { width: 100%; min-width: auto; }
+    .table-header { border-radius: 8px 8px 0 0; background: #E5E7EB; }
+    .table-item { background: #FAFAFA; border-bottom: 1px solid #eee; }
+
+    .split-layout { 
+        flex-direction: column; 
+    }
+    .side-img { 
+        width: 100%; 
+        order: -1; 
+        margin-bottom: 24px; 
+    }
+
+    .section-block { margin-bottom: 60px; }
+}
+
+@media (max-width: 480px) {
+    .meta-wrapper { grid-template-columns: 1fr; } 
+    .main-heading { font-size: 28px; }
+}
+
+/* --- NAV STYLES --- */
+.glass-nav-container { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+.glass-pill-container { background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(15px); border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), inset 0 1px 0 rgba(255, 255, 255, 0.8); }
+#nav-highlight { background: #FFFFFF; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); position: absolute; z-index: 1; border-radius: 9999px; height: calc(100% - 12px); top: 6px; }
+.nav-item { position: relative; z-index: 10; transition: color 0.3s ease; }
+.active-link { font-weight: 700 !important; color: #000 !important; }
+
+#mobile-menu { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease; transform-origin: top; }
+#mobile-menu.hidden-menu { transform: scaleY(0.95) translateY(-10px); opacity: 0; pointer-events: none; }
+#mobile-menu.visible-menu { transform: scaleY(1) translateY(0); opacity: 1; pointer-events: auto; }
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* --- CUSTOM CURSOR STYLES --- */
+#custom-cursor { 
+    position: fixed; top: 0; left: 0; 
+    width: 20px; height: 20px; /* Ukuran default */
+    border-radius: 50%; 
+    background: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(4px); 
+    border: 1px solid rgba(0, 0, 0, 0.05); 
+    pointer-events: none; z-index: 9999; 
+    transform: translate(-50%, -50%); 
+    display: flex; align-items: center; justify-content: center;
+    
+    /* Animasi halus saat berubah bentuk (Liquid Effect) */
+    transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1), 
+                height 0.4s cubic-bezier(0.19, 1, 0.22, 1), 
+                background-color 0.4s, border-radius 0.4s;
+}
+
+#cursor-text {
+    color: white; font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    white-space: nowrap; opacity: 0; transform: scale(0.8);
+    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+    text-transform: uppercase; text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-family: 'Inter', sans-serif;
+    display: block;
+}
+
+/* STATE 1: Saat Hover di Chart Final View (OPEN PROJECT) */
+#custom-cursor.hover-open-project {
+    width: 140px; height: 48px; border-radius: 9999px;
+    background: rgba(59, 130, 246, 0.9); /* Biru */
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.4);
+}
+
+/* STATE 2: Saat Hover di Next Project (VIEW PROJECT) */
+#custom-cursor.hover-next-project {
+    width: 140px; height: 48px; border-radius: 9999px;
+    background: rgba(59, 130, 246, 0.9); /* Biru yang sama */
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.4);
+}
+
+/* Tampilkan Teks Saat Hover */
+#custom-cursor.hover-open-project #cursor-text,
+#custom-cursor.hover-next-project #cursor-text {
+    opacity: 1; transform: scale(1);
+}

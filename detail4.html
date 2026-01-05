@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - 3D Blender Ramadan Icons</title>
+    <link rel="icon" type="image/png" href="image/Saif 2.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="detail1.css">
+</head>
+<body class="selection:bg-blue-200 selection:text-blue-900">
+
+    <div id="custom-cursor">
+        <span id="cursor-text"></span>
+    </div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:py-5 glass-nav-container transition-all duration-300">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+            <div class="flex flex-col z-50 relative">
+                <span class="font-bold text-base tracking-tight text-gray-900">Saif Muhammad Yusuf</span>
+                <span class="text-xs text-gray-500 font-normal">UI/UX Designer</span>
+            </div>
+
+            <button id="hamburger-btn" class="md:hidden p-2 -mr-2 text-gray-800 focus:outline-none relative group z-50">
+                <div class="w-6 h-5 flex flex-col justify-between items-end">
+                    <span class="w-6 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:rotate-45 group-data-[open=true]:translate-y-2"></span>
+                    <span class="w-4 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:opacity-0"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:-rotate-45 group-data-[open=true]:-translate-y-2.5"></span>
+                </div>
+            </button>
+
+            <div class="hidden md:flex glass-pill-container relative p-1.5 rounded-full items-center">
+                <div id="nav-highlight" style="width: 0; left: 0; opacity: 0;"></div>
+                <a href="index.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-bold text-gray-900 active-link">Work</a>
+                <a href="about.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-normal text-gray-500">About</a>
+                <a href="more.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-normal text-gray-500">More</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/uxbysaif/" target="_blank" class="group flex items-center gap-1 text-gray-600 hover:text-black transition-colors">
+                    Linkedin <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://drive.google.com/file/d/10Eb36Cv9ShKET3gtbWupDekyjwQQsNnU/view?pli=1" target="_blank" class="group flex items-center gap-1 text-gray-600 hover:text-black transition-colors">
+                    Resume <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden-menu absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-xl md:hidden flex flex-col p-6 gap-6 z-40">
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html" class="text-3xl font-bold text-gray-900 hover:text-blue-600 transition-colors">Work</a>
+                    <a href="about.html" class="text-3xl font-bold text-gray-400 hover:text-gray-900 transition-colors">About</a>
+                    <a href="more.html" class="text-3xl font-bold text-gray-400 hover:text-gray-900 transition-colors">More</a>
+                </div>
+                <div class="h-px bg-gray-100 w-full my-2"></div>
+                <div class="flex flex-col gap-4">
+                    <a href="https://www.linkedin.com/in/uxbysaif/" target="_blank" class="flex items-center justify-between text-lg font-medium text-gray-700">
+                        Linkedin
+                        <div class="p-2 bg-gray-100 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                    </a>
+                    <a href="#" class="flex items-center justify-between text-lg font-medium text-gray-700">
+                        Resume
+                        <div class="p-2 bg-gray-100 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container animate-fade-in-up">
+
+        <section class="section-block hero-section">
+            
+            <img class="rounded-img hero-img" src="image/3d blender.webp" alt="3D Blender Ramadan Icons Project">
+            
+            <div class="hero-text">
+                <h1 class="main-heading">3D BLENDER</h1>
+                
+                <div class="tags-row">
+                    <span class="tag">PRODUCT ICON</span>
+                    <span class="tag">3D BLENDER</span>
+                    <span class="tag">2024</span>
+                </div>
+                
+                <p class="subtitle">Leading the creation of Ramadhan-themed 3D icons with a focus on clarity and visual quality.</p>
+
+                <div class="meta-wrapper">
+                    <div class="meta-item">
+                        <span class="meta-label">TIMELINE</span>
+                        <span class="meta-value">January-March 2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">MADE BY</span>
+                        <span class="meta-value">Personal Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">ROLE</span>
+                        <span class="meta-value">3D Designer, End-to-End Product</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">SKILLS</span>
+                        <span class="meta-value">Sketch, Blender</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="section-intro">
+                <h2 class="section-heading">LONG STORY SHORT</h2>
+                <p class="text-body">I independently initiated and created a Ramadhan-themed 3D icon project in Blender, from concept to final render.</p>
+            </div>
+
+            <div class="grid-3 mb-large">
+                <img class="rounded-img" src="image/ICON1.webp" alt="3D Icon 1">
+                <img class="rounded-img" src="image/ICON2.webp" alt="3D Icon 2">
+                <img class="rounded-img" src="image/ICON3.webp" alt="3D Icon 3">
+            </div>
+            
+            <div>
+                <p class="text-body">I designed and produced this Ramadhan-themed 3D icon project as a personal portfolio case study to explore how cultural and seasonal themes can be translated into clear, visually engaging, and well-structured 3D assets.</p>
+                <p class="text-body mt-2">The project focuses on creating a cohesive set of 3D icons inspired by Ramadhan, emphasizing symbolic elements, soft lighting, and a calm visual tone. The goal was to communicate meaning and atmosphere through clean forms, balanced composition, and consistent visual language without unnecessary complexity.</p>
+                <p class="text-body mt-2">I was responsible for the entire process, from concept development and visual exploration to 3D modeling, material setup, lighting, and final rendering in Blender.</p>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="section-intro">
+                <h2 class="section-heading">REFERENCE</h2>
+                <p class="text-body">I explored references on Freepik to define the visual direction of this Ramadhan-themed 3D icon project.</p>
+            </div>
+            
+            <div class="grid-2">
+                <img class="rounded-img" src="image/3D REFREANCE.webp" alt="Reference Image 1">
+                <img class="rounded-img" src="image/3D REFREANCE1.webp" alt="Reference Image 2">
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="section-intro">
+                <h2 class="section-heading">FINAL VIEW</h2>
+                <p class="text-body">This is what my website looks like after I finished designing and developing it in both mobile and desktop modes.</p>
+            </div>
+    
+            <a href="https://saifahmat.gumroad.com/l/mtpnkb" target="_blank" class="block rounded-img final-view-trigger transition-transform duration-500 hover:scale-[1.01] cursor-pointer">
+                <video 
+                    class="w-full object-cover rounded-img" 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                >
+                    <source src="video/3D.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+        </section>
+
+        <section class="section-block text-center">
+            <h2 class="section-heading">NEXT UP…</h2>
+            <div class="grid-2">
+                <a href="detail1.html" class="next-item cursor-pointer group block next-project-trigger">
+                    <div class="overflow-hidden rounded-lg aspect-[633/415] bg-gray-100 relative">
+                        <video 
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                            src="video/IDN CAMP.webm" 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline>
+                        </video>
+                    </div>
+                    <h3 class="card-heading mt-4 group-hover:text-blue-600 transition-colors">IDN Camp By Saif</h3>
+                </a>
+
+                <a href="detail2.html" class="next-item cursor-pointer group block next-project-trigger">
+                     <div class="overflow-hidden rounded-lg aspect-[633/415] bg-gray-100 relative">
+                        <video 
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                            src="video/Incourse.webm" 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline>
+                        </video>
+                     </div>
+                    <h3 class="card-heading mt-4 group-hover:text-blue-600 transition-colors">Incourse For Learning</h3>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="px-6 py-12 md:py-20 border-t-[1.5px] border-[#D5D7DA] mt-0 backdrop-blur-sm bg-white/20">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-12">
+            <div class="flex flex-col gap-2 max-w-lg w-full">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">Thank you for viewing my portfolio.</h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-4 mt-2">Developed and design by lovers of nasi goreng and fried bananas.</p>
+                <p class="text-xs text-gray-400 font-light mt-4 md:mt-8">Copyright © 2026 Saif. All rights reserved.</p>
+            </div>
+            <div class="flex flex-row gap-12 sm:gap-16 md:gap-24 text-sm w-full md:w-auto">
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold uppercase tracking-wider text-gray-900">Contact</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="mailto:saifahmat.4@gmail.com" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">EMAIL</a>
+                        <a href="#" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">LINKEDIN</a>
+                        <a href="#" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">INSTAGRAM</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold uppercase tracking-wider text-gray-900">Navigation</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="index.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">WORK</a>
+                        <a href="about.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">ABOUT</a>
+                        <a href="more.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="detail1.js"></script>
+</body>
+</html>

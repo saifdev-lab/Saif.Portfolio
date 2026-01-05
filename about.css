@@ -1,0 +1,120 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #E6F4FE 1%, #F7FBFE 10%, #FFFFFF 100%);
+    min-height: 100vh;
+    color: #111111;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- LOGIKA KURSOR: DESKTOP ONLY --- */
+@media (hover: hover) and (pointer: fine) {
+    body, a, button, .cursor-pointer, .nav-item { cursor: none; }
+    #custom-cursor { display: flex; }
+}
+@media (hover: none) { #custom-cursor { display: none !important; } }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* --- APPLE LIQUID GLASS STYLES (NAVBAR) --- */
+.glass-nav-container {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-pill-container {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+#nav-highlight {
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
+    position: absolute;
+    z-index: 1;
+    border-radius: 9999px;
+    height: calc(100% - 12px);
+    top: 6px;
+    opacity: 0; 
+    pointer-events: none;
+}
+
+.enable-transition {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-item {
+    position: relative;
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+/* --- CUSTOM LIQUID CURSOR STYLES --- */
+#custom-cursor {
+    position: fixed; top: 0; left: 0; width: 20px; height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.08); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    pointer-events: none; z-index: 9999;
+    opacity: 0; 
+    transform: translate3d(-100px, -100px, 0) translate(-50%, -50%);
+    transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1), 
+                height 0.4s cubic-bezier(0.19, 1, 0.22, 1), 
+                background-color 0.4s, border-radius 0.4s, opacity 0.2s ease;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+
+#cursor-text {
+    color: white; font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    white-space: nowrap; opacity: 0; transform: scale(0.8);
+    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+    text-transform: uppercase; font-family: 'Inter', sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+#custom-cursor.hover-project {
+    width: 140px; height: 48px; border-radius: 9999px;
+    background: rgba(59, 130, 246, 0.75);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.4);
+}
+
+#custom-cursor.hover-project #cursor-text { opacity: 1; transform: scale(1); }
+
+/* --- LINK BIASA (Linkedin, Navbar) --- */
+#custom-cursor.hover-small {
+    width: 40px; height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+#custom-cursor.hover-small #cursor-text {
+    opacity: 0; display: none;
+}
+
+/* --- MOBILE MENU --- */
+#mobile-menu { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease; transform-origin: top; }
+#mobile-menu.hidden-menu { transform: scaleY(0.95) translateY(-10px); opacity: 0; pointer-events: none; }
+#mobile-menu.visible-menu { transform: scaleY(1) translateY(0); opacity: 1; pointer-events: auto; }
+
+/* Helpers */
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Cards Hover */
+.group:hover .group-hover\:scale-\[1\.02\] { transform: scale(1.02); }
+.group:hover .group-hover\:text-blue-600 { color: #2563eb; }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Muhammad Yusuf - UI/UX Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="image/Saif 2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-blue-200 selection:text-blue-900">
+
+    <div id="custom-cursor">
+        <span id="cursor-text"></span>
+    </div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:py-5 glass-nav-container transition-all duration-300">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+            <div class="flex flex-col z-50 relative">
+                <span class="font-semibold text-base tracking-tight text-gray-900">Saif Muhammad Yusuf</span>
+                <span class="text-xs text-gray-500 font-normal">UI/UX Designer</span>
+            </div>
+            <button id="hamburger-btn" class="md:hidden z-50 p-2 -mr-2 text-gray-800 focus:outline-none relative group">
+                <div class="w-6 h-5 flex flex-col justify-between items-end">
+                    <span class="w-6 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:rotate-45 group-data-[open=true]:translate-y-2"></span>
+                    <span class="w-4 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:opacity-0"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:-rotate-45 group-data-[open=true]:-translate-y-2.5"></span>
+                </div>
+            </button>
+            <div class="hidden md:flex glass-pill-container relative p-1.5 rounded-full items-center">
+                <div id="nav-highlight"></div>
+                <a href="index.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-extrabold text-gray-900 active-link" data-target="work">Work</a>
+                <a href="about.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-normal text-gray-500" data-target="about">About</a>
+                <a href="more.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-normal text-gray-500" data-target="more">More</a>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/uxbysaif/" target="_blank" class="group flex items-center gap-1 text-gray-600 hover:text-black transition-colors">
+                    Linkedin <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://drive.google.com/file/d/10Eb36Cv9ShKET3gtbWupDekyjwQQsNnU/view?usp=sharing" target="_blank" class="group flex items-center gap-1 text-gray-600 hover:text-black transition-colors">
+                    Resume <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden-menu absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-xl md:hidden flex flex-col p-6 gap-6 z-40">
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html" class="text-3xl font-bold text-gray-900 hover:text-blue-600 transition-colors">Work</a>
+                    <a href="about.html" class="text-3xl font-bold text-gray-400 hover:text-gray-900 transition-colors">About</a>
+                    <a href="more.html" class="text-3xl font-bold text-gray-400 hover:text-gray-900 transition-colors">More</a>
+                </div>
+                <div class="h-px bg-gray-100 w-full my-2"></div>
+                <div class="flex flex-col gap-4">
+                    <a href="https://www.linkedin.com/in/uxbysaif/" target="_blank" class="flex items-center justify-between text-lg font-medium text-gray-700">Linkedin <div class="p-2 bg-gray-100 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div></a>
+                    <a href="https://drive.google.com/file/d/10Eb36Cv9ShKET3gtbWupDekyjwQQsNnU/view?usp=sharing" target="_blank" class="flex items-center justify-between text-lg font-medium text-gray-700">Resume <div class="p-2 bg-gray-100 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 md:pt-64 pb-20 md:pb-32 px-6">
+        <div class="text-center mb-24 md:mb-60 animate-fade-in-up">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] font-bold text-gray-900 tracking-[-0.04em] mb-4 md:mb-6 uppercase leading-tight md:leading-none drop-shadow-sm">
+                    Saif Muhammad Yusuf
+            </h1>
+
+                <p class="text-base md:text-[18px] text-[#86868B] tracking-wider uppercase font-medium">
+                     UI/UX Designer @ IDN BOARDING SCHOOL
+                </p>
+            </div>
+
+        <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16 md:gap-y-24">
+            
+            <a href="detail1.html" class="group cursor-pointer block">
+                <div class="mockup-bg w-full aspect-[16/10] rounded-xl mb-4 md:mb-6 overflow-hidden relative flex items-center justify-center transition-all duration-500 group-hover:scale-[1.01] shadow-sm group-hover:shadow-xl ring-1 ring-white/50 border border-white/60">
+                     <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="video/IDN CAMP.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1 md:gap-4 px-1">
+                    <div class="flex-1">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">IDN Camp By Saif</h3>
+                        
+                        <div class="flex md:hidden flex-wrap gap-2 mb-3 mt-1">
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">WEB DESIGN</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                        </div>
+
+                        <p class="text-gray-500 text-sm font-normal leading-relaxed">A focused and personal approach to learning</p>
+                    </div>
+
+                    <div class="hidden md:flex flex-wrap gap-2 md:justify-end mt-1">
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">WEB DESIGN</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="detail2.html" class="group cursor-pointer block">
+                <div class="mockup-bg w-full aspect-[16/10] rounded-xl mb-4 md:mb-6 overflow-hidden relative flex items-center justify-center transition-all duration-500 group-hover:scale-[1.01] shadow-sm group-hover:shadow-xl ring-1 ring-white/50 border border-white/60">
+                     <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="video/Incourse.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1 md:gap-4 px-1">
+                    <div class="flex-1">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">Incourse For Learning</h3>
+
+                         <div class="flex md:hidden flex-wrap gap-2 mb-3 mt-1">
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Product Design</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                        </div>
+
+                        <p class="text-gray-500 text-sm font-normal leading-relaxed">Building accessible learning experiences anywhere</p>
+                    </div>
+
+                    <div class="hidden md:flex flex-wrap gap-2 md:justify-end mt-1">
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Product Design</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="detail3.html" class="group cursor-pointer block">
+                <div class="mockup-bg w-full aspect-[16/10] rounded-xl mb-4 md:mb-6 overflow-hidden relative flex items-center justify-center transition-all duration-500 group-hover:scale-[1.01] shadow-sm group-hover:shadow-xl ring-1 ring-white/50 border border-white/60">
+                     <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="video/MAYU APP.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1 md:gap-4 px-1">
+                    <div class="flex-1">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">Mayu App</h3>
+
+                        <div class="flex md:hidden flex-wrap gap-2 mb-3 mt-1">
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">DESIGN LEAD</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">APPLICATION</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                        </div>
+
+                        <p class="text-gray-500 text-sm font-normal leading-relaxed">Leading accessible learning experiences</p>
+                    </div>
+
+                    <div class="hidden md:flex flex-wrap gap-2 md:justify-end mt-1">
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">DESIGN LEAD</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">APPLICATION</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="detail4.html" class="group cursor-pointer block">
+                <div class="mockup-bg w-full aspect-[16/10] rounded-xl mb-4 md:mb-6 overflow-hidden relative flex items-center justify-center transition-all duration-500 group-hover:scale-[1.01] shadow-sm group-hover:shadow-xl ring-1 ring-white/50 border border-white/60">
+                     <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="video/3D.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1 md:gap-4 px-1">
+                    <div class="flex-1">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">3D Exploration</h3>
+
+                        <div class="flex md:hidden flex-wrap gap-2 mb-3 mt-1">
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">PRODUCT ICON</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">3D BLENDER</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                        </div>
+
+                        <p class="text-gray-500 text-sm font-normal leading-relaxed">Reimagining how people learn through 3D</p>
+                    </div>
+
+                    <div class="hidden md:flex flex-wrap gap-2 md:justify-end mt-1">
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">PRODUCT ICON</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">3D BLENDER</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">2024</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="group cursor-pointer" data-status="locked">
+                <div class="mockup-bg w-full aspect-[16/10] rounded-xl mb-4 md:mb-6 overflow-hidden relative flex items-center justify-center transition-all duration-500 group-hover:scale-[1.01] shadow-sm group-hover:shadow-xl ring-1 ring-white/50 border border-white/60">
+                     <img src="image/Islam.png" alt="Islam Project" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1 md:gap-4 px-1">
+                    <div class="flex-1">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">Islam App</h3>
+
+                        <div class="flex md:hidden flex-wrap gap-2 mb-3 mt-1">
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Product Design</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Coming Soon</span>
+                        </div>
+
+                        <p class="text-gray-500 text-sm font-normal leading-relaxed">Designing mindful Islamic learning experiences</p>
+                    </div>
+
+                    <div class="hidden md:flex flex-wrap gap-2 md:justify-end mt-1">
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Product Design</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer" data-status="locked">
+                <div class="mockup-bg w-full aspect-[16/10] rounded-xl mb-4 md:mb-6 overflow-hidden relative flex items-center justify-center transition-all duration-500 group-hover:scale-[1.01] shadow-sm group-hover:shadow-xl ring-1 ring-white/50 border border-white/60">
+                     <img src="image/Cover.webp" alt="Cover Project" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1 md:gap-4 px-1">
+                    <div class="flex-1">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">Dashboards Project</h3>
+
+                        <div class="flex md:hidden flex-wrap gap-2 mb-3 mt-1">
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Product Design</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                            <span class="px-2 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Coming Soon</span>
+                        </div>
+
+                        <p class="text-gray-500 text-sm font-normal leading-relaxed">Transforming data into clear decisions</p>
+                    </div>
+
+                    <div class="hidden md:flex flex-wrap gap-2 md:justify-end mt-1">
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Product Design</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Website</span>
+                        <span class="px-3 py-1 border border-blue-100 bg-white/60 rounded text-[10px] uppercase font-bold tracking-wider text-gray-500">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="px-6 py-20 border-t-[1.5px] border-[#D5D7DA] mt-10 backdrop-blur-sm bg-white/20">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div class="flex flex-col gap-2 max-w-lg">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">Thank you for viewing my portfolio.</h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8 mt-2">Developed and design by lovers of nasi goreng and fried bananas.</p>
+                <p class="text-xs text-gray-400 font-light mt-auto">Copyright © 2026 Saif. All rights reserved.</p>
+            </div>
+            <div class="flex flex-row gap-16 md:gap-24 text-sm">
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold uppercase tracking-wider text-gray-900">Contact</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="mailto:saifahmat.4@gmail.com" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">EMAIL</a>
+                        <a href="https://www.linkedin.com/in/uxbysaif" target="_blank" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">LINKEDIN</a>
+                        <a href="https://www.instagram.com/saif.idn/" target="_blank" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">INSTAGRAM</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold uppercase tracking-wider text-gray-900">Navigation</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="index.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">WORK</a>
+                        <a href="about.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">ABOUT</a>
+                        <a href="more.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
