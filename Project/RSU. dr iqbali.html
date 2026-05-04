@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSU DR. IQBALI TAUFAN | Case Study</title>
+    <!-- PATH FIXED: Keluar folder Project untuk ambil image -->
+    <link rel="icon" type="image/png" href="../image/Saif 2.png">
+    
+    <!-- PATH FIXED: Keluar folder Project untuk ambil output.css -->
+    <link href="../output.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700&display=swap">
+    
+    <!-- PATH TETAP: Karena global.css ada di dalam folder Project bersama file ini -->
+    <link rel="stylesheet" href="global.css">
+</head>
+<body class="selection:bg-blue-200 selection:text-blue-900 bg-white">
+
+    <div id="custom-cursor"><span id="cursor-text"></span></div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:py-5 glass-nav-container transition-all duration-300">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+            <div class="flex flex-col z-50 relative">
+                <span class="font-bold text-base tracking-tight text-gray-900">Saif Muhammad Yusuf</span>
+                <span class="text-xs text-gray-500 font-normal">UI/UX Designer</span>
+            </div>
+            
+            <button id="hamburger-btn" data-open="false" class="md:hidden p-2 -mr-2 text-gray-800 focus:outline-none relative group z-50">
+                <div class="w-6 h-5 flex flex-col justify-between items-end">
+                    <span class="w-6 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:rotate-45 group-data-[open=true]:translate-y-2"></span>
+                    <span class="w-4 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:opacity-0"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded-full transition-all duration-300 group-data-[open=true]:-rotate-45 group-data-[open=true]:-translate-y-2.5"></span>
+                </div>
+            </button>
+
+            <div class="hidden md:flex glass-pill-container relative p-1.5 rounded-full items-center">
+                <div id="nav-highlight" style="width: 0; left: 0; opacity: 0;"></div>
+                <!-- PATH FIXED: Menuju halaman utama di luar folder Project -->
+                <a href="../index.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-bold text-gray-900 active-link">Work</a>
+                <a href="../about.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-normal text-gray-500">About</a>
+                <a href="../more.html" class="nav-item nav-transition-link px-8 py-2 rounded-full text-sm font-normal text-gray-500">More</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/uxbysaif/" target="_blank" class="group flex items-center gap-1 text-gray-600 hover:text-black transition-colors">
+                    Linkedin <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://drive.google.com/file/d/16ujihtOnv_rDxPcx988_XghqAa5PlV_9/view?usp=sharing" target="_blank" class="group flex items-center gap-1 text-gray-600 hover:text-black transition-colors">
+                    Resume <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden-menu absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-xl md:hidden flex flex-col p-6 gap-6 z-40">
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-4">
+                    <!-- PATH FIXED: Menu Mobile -->
+                    <a href="../index.html" class="text-3xl font-bold text-gray-900 hover:text-blue-600 transition-colors">Work</a>
+                    <a href="../about.html" class="text-3xl font-bold text-gray-400 hover:text-gray-900 transition-colors">About</a>
+                    <a href="../more.html" class="text-3xl font-bold text-gray-400 hover:text-gray-900 transition-colors">More</a>
+                </div>
+                <div class="h-px bg-gray-100 w-full my-2"></div>
+                <div class="flex flex-col gap-4">
+                    <a href="https://www.linkedin.com/in/uxbysaif/" target="_blank" class="flex items-center justify-between text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                        Linkedin
+                        <div class="p-2 bg-gray-100 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/16ujihtOnv_rDxPcx988_XghqAa5PlV_9/view?usp=sharing" target="_blank" class="flex items-center justify-between text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                        Resume
+                        <div class="p-2 bg-gray-100 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container animate-fade-in-up">
+        
+        <section class="section-block flex flex-col gap-8">
+            <img class="w-full h-auto md:h-[577px] rounded-2xl object-cover bg-gray-50 border border-gray-100" src="/image/RSU Dr iqbal.webp" alt="RSU DR.IQBALI TAUFAN Hero">
+            
+            <div class="w-full">
+                <h1 class="text-4xl md:text-[48px] font-extrabold text-gray-900 leading-[1.1] tracking-[-0.02em] uppercase mb-6">RSU DR.IQBALI TAUFAN</h1>
+                <div class="flex gap-2 mb-6">
+                    <span class="px-3 py-1 border border-gray-200 rounded-md text-[13px] font-semibold text-gray-600 bg-gray-50">WEB DESIGN</span>
+                    <span class="px-3 py-1 border border-gray-200 rounded-md text-[13px] font-semibold text-gray-600 bg-gray-50">WEBSITE</span>
+                    <span class="px-3 py-1 border border-gray-200 rounded-md text-[13px] font-semibold text-gray-600 bg-gray-50">2026</span>
+                </div>
+                <p class="text-[20px] text-gray-700 leading-[1.6] w-full font-medium">Transforming a regional medical institution into a high-trust digital platform through intentional UI/UX architecture.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between border-y border-gray-200 py-8 mt-2 gap-8">
+                <div class="flex flex-col gap-1.5"><span class="text-gray-400 text-[12px] font-bold tracking-widest uppercase">Timeline</span><span class="text-gray-900 font-medium">January 2026</span></div>
+                <div class="flex flex-col gap-1.5"><span class="text-gray-400 text-[12px] font-bold tracking-widest uppercase">Made By</span><span class="text-gray-900 font-medium">Team Project</span></div>
+                <div class="flex flex-col gap-1.5"><span class="text-gray-400 text-[12px] font-bold tracking-widest uppercase">Role</span><span class="text-gray-900 font-medium">UX Designer, End-to-End Product</span></div>
+                <div class="flex flex-col gap-1.5"><span class="text-gray-400 text-[12px] font-bold tracking-widest uppercase">Skills</span><span class="text-gray-900 font-medium">Figma</span></div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="mb-10 max-w-4xl">
+                <h2 class="text-[32px] font-bold text-gray-900 mb-4 uppercase">EXECUTIVE SUMMARY</h2>
+                <p class="text-[18px] text-gray-600 leading-[1.6]">Bridging the medical gap between institutional excellence and digital accessibility.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex flex-col gap-4">
+                    <span class="text-[32px] font-extrabold text-gray-900 font-poppins mb-2">01 Design</span>
+                    <p class="text-[17px] text-gray-600 leading-relaxed">Built a credible visual facade that mirrors the hospital's professional medical standards.</p>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex flex-col gap-4">
+                    <span class="text-[32px] font-extrabold text-gray-900 font-poppins mb-2">02 Strategy</span>
+                    <p class="text-[17px] text-gray-600 leading-relaxed">Aligned stakeholder medical goals with user-centric data to streamline the patient booking flow.</p>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex flex-col gap-4">
+                    <span class="text-[32px] font-extrabold text-gray-900 font-poppins mb-2">03 Execution</span>
+                    <p class="text-[17px] text-gray-600 leading-relaxed">Delivered a fully responsive design system optimized for mobile-first patient interaction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="mb-10 max-w-4xl">
+                <h2 class="text-[32px] font-bold text-gray-900 mb-4 uppercase">MARKET RESEARCH</h2>
+                <p class="text-[18px] text-gray-600 leading-[1.6]">Assessing gaps in regional healthcare presence and I analyzed local competitors to identify key friction points and opportunities for differentiation.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+                <div class="w-full lg:w-[35%] bg-white border border-gray-200 rounded-[24px] p-8 lg:p-10 shadow-sm flex flex-col justify-center">
+                    <h3 class="text-[64px] font-bold text-gray-900 leading-none mb-2 font-poppins">4</h3>
+                    <span class="text-[12px] font-bold tracking-widest uppercase text-gray-500 mb-8 block">LOCAL COMPETITORS STUDIED</span>
+                    
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                <h4 class="text-[14px] font-bold text-emerald-600 uppercase tracking-wide">STRENGTHS</h4>
+                            </div>
+                            <p class="text-[15px] text-gray-600 leading-relaxed">Functional booking systems and comprehensive doctor lists across established hospitals.</p>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="w-2 h-2 rounded-full bg-rose-500"></div>
+                                <h4 class="text-[14px] font-bold text-rose-600 uppercase tracking-wide">WEAKNESSES</h4>
+                            </div>
+                            <p class="text-[15px] text-gray-600 leading-relaxed">High visual clutter, poor mobile responsiveness, and fragmented navigation hierarchies.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-[65%] rounded-[24px] overflow-hidden border border-gray-200 bg-gray-50">
+                    <img class="w-full h-full object-cover" src="/image/Audit.webp" alt="Market Analysis">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="max-w-4xl mx-auto text-center py-12 md:py-20 px-6">
+                <p class="text-[28px] md:text-[40px] font-bold text-gray-900 leading-tight italic">
+                    "How might we help patients access critical hospital information without feeling overwhelmed or misinformed?"
+                </p>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="mb-10 max-w-4xl">
+                <h2 class="text-[32px] font-bold text-gray-900 mb-4 uppercase">PROJECT OVERVIEW</h2>
+                <p class="text-[18px] text-gray-600 leading-[1.6]">Guided MVP Features Focusing on high-impact features to bridge the institutional trust gap immediately.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex gap-6 items-start">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600 flex-shrink-0 border border-gray-100">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-[20px] font-bold text-gray-900 mb-2">One-Click Doctor Directory</h4>
+                        <p class="text-[16px] text-gray-600 leading-relaxed">Centralized schedules for rapid physician discovery, reducing hunt time by 60%.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex gap-6 items-start">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600 flex-shrink-0 border border-gray-100">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-[20px] font-bold text-gray-900 mb-2">Mobile-First UI</h4>
+                        <p class="text-[16px] text-gray-600 leading-relaxed">Optimized layouts for emergency access, ensuring critical data is always reachable.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex gap-6 items-start">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-emerald-600 flex-shrink-0 border border-gray-100">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-[20px] font-bold text-gray-900 mb-2">Verified Credibility</h4>
+                        <p class="text-[16px] text-gray-600 leading-relaxed">Showcasing facility certifications to build immediate clinical trust with new patients.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 lg:p-10 flex gap-6 items-start">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-rose-600 flex-shrink-0 border border-gray-100">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-[20px] font-bold text-gray-900 mb-2">Centralized Contact</h4>
+                        <p class="text-[16px] text-gray-600 leading-relaxed">Integrated hotlines for immediate medical inquiries and department-specific support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="mb-10 max-w-4xl">
+                <h2 class="text-[32px] font-bold text-gray-900 mb-4 uppercase">VISUAL LANGUAGE</h2>
+                <p class="text-[18px] text-gray-600 leading-[1.6]">Defining a clinical design ecosystem through precision, hygiene, and high-density information architecture.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+                <div class="w-full lg:w-[35%] flex flex-col gap-6">
+                    <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 flex-1 flex flex-col justify-center">
+                        <div class="w-12 h-12 bg-[#E6334B] rounded-full shadow-sm mb-6 flex-shrink-0"></div>
+                        <h4 class="text-[18px] font-bold text-gray-900 mb-2 uppercase">CLINICAL CLARITY</h4>
+                        <p class="text-[15px] text-gray-600 leading-relaxed mb-6">The primary identity utilizes a high-contrast palette to ensure absolute legibility in critical medical environments.</p>
+                        <div class="mt-auto flex flex-col">
+                            <span class="text-[11px] font-bold tracking-widest text-gray-400 uppercase">PRIMARY CORE</span>
+                            <span class="text-[14px] font-medium text-gray-800">#E6334B</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-[24px] p-8 flex-1 flex flex-col justify-center">
+                        <div class="w-12 h-12 bg-[#2F80ED] rounded-full shadow-sm mb-6 flex-shrink-0"></div>
+                        <h4 class="text-[18px] font-bold text-gray-900 mb-2 uppercase">HYGIENE STANDARDS</h4>
+                        <p class="text-[15px] text-gray-600 leading-relaxed mb-6">Expansive white space and subtle tonal layers mimic sterile laboratory surfaces to reduce cognitive load.</p>
+                        <div class="mt-auto flex flex-col">
+                            <span class="text-[11px] font-bold tracking-widest text-gray-400 uppercase">PRIMARY CORE</span>
+                            <span class="text-[14px] font-medium text-gray-800">#2F80ED</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-[65%] rounded-[24px] overflow-hidden border border-gray-200 bg-gray-50">
+                    <img class="w-full h-full object-cover" src="/image/Landing page RS.webp" alt="Visual Language Design">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="max-w-4xl mx-auto text-center py-16 md:py-24 flex flex-col items-center gap-8">
+                <blockquote class="text-[24px] md:text-[32px] font-bold text-gray-900 leading-tight">
+                    "The final digital implementation successfully bridged our medical credibility gap. The platform is now as professional as our clinical care."
+                </blockquote>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img class="w-20 h-20 rounded-full object-cover bg-gray-200 shadow-sm" src="https://placehold.co/80x80/E9EAEB/9CA3AF" alt="Board of Directors Avatar">
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="font-bold text-gray-900 text-[18px]">Board of Directors</span>
+                        <span class="text-[12px] font-semibold tracking-widest uppercase text-gray-500">RSU DR. IQBALI TAUFAN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-block text-center border-t border-gray-200 pt-16">
+            <h2 class="section-heading mb-12 text-gray-500">NEXT UP…</h2>
+            <div class="grid-2">
+                <!-- PATH TETAP: Karena berada dalam folder Project yang sama -->
+                <a href="tajir.html" class="next-item cursor-pointer group block next-project-trigger text-left">
+                    <div class="overflow-hidden rounded-xl aspect-[633/415] bg-gray-100 relative border border-gray-200 mb-4">
+                        <video 
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                            src="/video/Tajir.webm" 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline>
+                        </video>
+                    </div>
+                    <h3 class="card-heading group-hover:text-blue-600 transition-colors">TAJIR - Adaptive AI Financial</h3>
+                </a>
+
+                <a href="PPS.html" class="next-item cursor-pointer group block next-project-trigger text-left">
+                     <div class="overflow-hidden rounded-xl aspect-[633/415] bg-gray-100 relative border border-gray-200 mb-4">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="/image/PPS SMI.webp" alt="PPS SMI preview">
+                     </div>
+                    <h3 class="card-heading group-hover:text-blue-600 transition-colors">PPS SMI</h3>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="px-6 py-12 md:py-20 border-t-[1.5px] border-[#D5D7DA] mt-0 backdrop-blur-sm bg-white/20">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-12">
+            <div class="flex flex-col gap-2 max-w-lg w-full">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">Thank you for viewing my portfolio.</h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-4 mt-2">Developed and design by lovers of nasi goreng and fried bananas.</p>
+                <p class="text-xs text-gray-400 font-light mt-4 md:mt-8">Copyright © 2026 Saif. All rights reserved.</p>
+            </div>
+            <div class="flex flex-row gap-12 sm:gap-16 md:gap-24 text-sm w-full md:w-auto">
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold uppercase tracking-wider text-gray-900">Contact</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="mailto:saifahmat.4@gmail.com" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">EMAIL</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/uxbysaif/" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">LINKEDIN</a>
+                        <a target="_blank" href="https://www.instagram.com/saif.branding/" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">INSTAGRAM</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold uppercase tracking-wider text-gray-900">Navigation</h4>
+                    <div class="flex flex-col gap-3">
+                        <!-- PATH FIXED: Keluar folder Project -->
+                        <a href="../index.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">WORK</a>
+                        <a href="../about.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">ABOUT</a>
+                        <a href="../more.html" class="text-gray-500 hover:text-black transition-colors uppercase font-medium">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PATH TETAP: Karena global.js ada di dalam folder Project bersama file ini -->
+    <script src="global.js"></script>
+</body>
+</html>
